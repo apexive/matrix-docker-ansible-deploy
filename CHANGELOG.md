@@ -1,3 +1,19 @@
+# 2025-12-09
+
+## Traefik Cert Dumper upgrade
+
+The variable `traefik_certs_dumper_ssl_dir_path` was renamed to `traefik_certs_dumper_ssl_path`. Users who use [their own webserver with Traefik](docs/configuring-playbook-own-webserver.md) may need to adjust their configuration.
+
+The variable `traefik_certs_dumper_dumped_certificates_dir_path` was renamed to `traefik_certs_dumper_dumped_certificates_path`. Users who use [SRV Server Delegation](docs/howto-srv-server-delegation.md) may need to adjust their configuration.
+
+# 2025-11-23
+
+## Matrix.to support
+
+The playbook now supports [Matrix.to](https://github.com/matrix-org/matrix.to) — a simple URL redirection service which powers [matrix.to](https://matrix.to).
+
+To learn more, see our [Setting up Matrix.to](docs/configuring-playbook-matrixto.md) documentation page.
+
 # 2025-11-09
 
 ## matrix-appservice-webhooks has been removed from the playbook
